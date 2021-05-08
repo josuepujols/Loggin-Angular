@@ -1,0 +1,54 @@
+
+h2 {
+    margin-top: -120px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: blue;
+}
+
+#form {
+    margin-top: 120px;
+    width: 30%;
+    margin: 0px auto;
+    background-color: #cccccc;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#error {
+    color: red;
+}
+
+#form h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form label {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form div {
+    margin: 0px auto;
+}
+
+#form div input[type="text"],
+#form div input[type="password"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+    width: 250px;
+}
+
+#form div input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    cursor: pointer;
+}

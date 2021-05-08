@@ -1,0 +1,49 @@
+
+
+<aside id="barra-lateral">
+
+    <h2>Agregar Usuario</h2>
+
+    <hr/>
+
+
+    <form id="form"#form="ngForm" (submit)="form.reset()">
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" [(ngModel)]="nombre"/>
+        </div>
+
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" [(ngModel)]="apellidos"/>
+        </div>
+
+        <div>
+            <label for="correo">Correo:</label>
+            <input type="text" name="correo" [(ngModel)]="correo"/>
+        </div>
+
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="text" name="edad" [(ngModel)]="edad"/>
+        </div>
+
+        <div>
+            <label for="pais">Pais:</label>
+            <input type="text" name="pais" [(ngModel)]="pais"/>
+        </div>
+
+        <div>
+            <label for="url">URL:</label>
+            <input type="text" name="url" [(ngModel)]="url"/>
+        </div>
+
+
+        <div id="boton">
+            <input (click)="objeto_principal.add_user(nombre, apellidos, correo, edad, pais, url)" type="submit" value="Agregar">
+        </div>
+
+    </form>
+
+</aside>

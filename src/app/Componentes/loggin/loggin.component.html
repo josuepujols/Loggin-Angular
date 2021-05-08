@@ -1,0 +1,27 @@
+
+<h2>Crea tus propios usuarios</h2>
+
+<form id="form" (submit)="iniciar_sesion()">
+
+    <h1>Iniciar Sesion</h1>
+
+    <label for="user">Usuario</label>
+    <div>
+        <input type="text" name="user" [(ngModel)]="user" (keyup.enter)="iniciar_sesion()" required/>
+    </div>
+
+    <label for="password">Contraseña</label>
+    <div>
+        <input type="password" name="password" [(ngModel)]="password" (keyup.enter)="iniciar_sesion()" required/>
+    </div>
+
+    <div *ngIf="saber_datos" id="error">
+        <p>Los datos ingresados no son correctos.</p>
+    </div>
+
+    <div>
+        <input type="submit" value="Inicar Sesion"/>
+    </div>
+
+
+</form>
